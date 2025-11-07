@@ -6,7 +6,7 @@
   <meta name="title" content="PicMusic - bucolic-ruiqi">
   <meta name="description" content="PicMusic Web：音乐相关功能展示、视频演示与项目报告预览。">
   <meta name="keywords" content="PicMusic, 音乐, Web 项目, 演示, 报告">
-  <meta name="author" content="bucolic-ruiqi">
+  <meta name="author" content="Ruiqi Yang">
   <meta name="robots" content="index, follow">
   <meta name="language" content="zh-CN">
 
@@ -37,29 +37,29 @@
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="static/css/fontawesome.all.min.css"></noscript>
+  <!-- FontAwesome 图标样式（直接加载以确保 GitHub 图标显示） -->
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
       <!-- 顶部：左侧 Logo，右侧标题/作者/按钮/简介（右侧内容居中） -->
       <section class="section pt-6 pb-4">
-        <div class="container">
-          <div class="columns is-vcentered is-variable is-6">
-            <div class="column is-4 has-text-centered">
+        <div class="container has-text-centered">
+          <div class="columns is-centered is-vcentered is-variable is-6">
+            <div class="column is-narrow">
               <img src="static/images/logo.png" alt="PicMusic 项目 Logo" style="max-width:180px;">
             </div>
-            <div class="column is-8 has-text-centered">
-              <h1 class="title is-2 mb-2">PicMusic</h1>
-              <p class="subtitle is-5 mb-3">作者：<a href="https://github.com/bucolic-ruiqi" target="_blank">bucolic-ruiqi</a></p>
-              <a class="button is-dark is-rounded mb-4" href="https://github.com/bucolic-ruiqi/PicMusic_web" target="_blank" aria-label="GitHub 仓库链接">
+            <div class="column" style="max-width:680px;">
+              <h1 class="title is-2 mb-5">PicMusic</h1>
+              <p class="subtitle is-4 mb-5"><a href="https://github.com/bucolic-ruiqi" target="_blank">Ruiqi Yang</a></p>
+              <a class="button is-dark is-rounded mb-5" href="https://github.com/bucolic-ruiqi/PicMusic_web" target="_blank" aria-label="GitHub 仓库链接">
                 <span class="icon"><i class="fab fa-github"></i></span>
                 <span>GitHub</span>
               </a>
-              <div class="content is-medium" style="max-width:760px;margin:0 auto;">
-                <p><strong>项目简介：</strong>PicMusic 是一个聚合图片与音乐相关交互的网页项目，用于演示推荐、编辑、搜索等功能模块。该页面简化为核心展示：页面截图、功能演示视频，以及后续可扩展的更多交互。</p>
-                <p>你可以在此基础上继续添加：音乐可视化、用户上传、实时分析、主题切换等特性。</p>
+              <div class="content is-medium has-text-left" style="margin:0 auto;">
+                <p><strong>项目简介：</strong>PicMusic 是一个聚合图片与音乐相关交互的网页项目，用于演示推荐、编辑、搜索等功能模块。页面专注核心展示：页面截图、功能演示视频以及实验报告。</p>
+                <p>后续可扩展：音乐可视化、用户上传、实时分析、主题切换、收藏与搜索优化等功能。</p>
               </div>
             </div>
           </div>
@@ -94,33 +94,29 @@
           <div class="content" style="max-width:900px;margin:0 auto;">
             <div class="mb-5">
               <video controls preload="metadata" style="width:100%;border:1px solid #ddd;border-radius:8px;" title="页面整体演示">
-                <source src="static/videos/01页面整体演示.mp4" type="video/mp4">
                 <source src="static/videos/01页面整体演示.mov" type="video/quicktime">
-                您的浏览器不支持视频播放。
+                您的浏览器不支持视频播放。请使用现代浏览器或将视频转码为 mp4。
               </video>
               <p class="has-text-centered is-size-6 mt-2">页面整体演示</p>
             </div>
             <div class="mb-5">
               <video controls preload="metadata" style="width:100%;border:1px solid #ddd;border-radius:8px;" title="推荐功能演示">
-                <source src="static/videos/02推荐功能演示.mp4" type="video/mp4">
                 <source src="static/videos/02推荐功能演示.mov" type="video/quicktime">
-                您的浏览器不支持视频播放。
+                您的浏览器不支持视频播放。请使用现代浏览器或将视频转码为 mp4。
               </video>
               <p class="has-text-centered is-size-6 mt-2">推荐功能演示</p>
             </div>
             <div class="mb-5">
               <video controls preload="metadata" style="width:100%;border:1px solid #ddd;border-radius:8px;" title="编辑功能演示">
-                <source src="static/videos/03编辑功能演示.mp4" type="video/mp4">
                 <source src="static/videos/03编辑功能演示.mov" type="video/quicktime">
-                您的浏览器不支持视频播放。
+                您的浏览器不支持视频播放。请使用现代浏览器或将视频转码为 mp4。
               </video>
               <p class="has-text-centered is-size-6 mt-2">编辑功能演示</p>
             </div>
             <div class="mb-2">
               <video controls preload="metadata" style="width:100%;border:1px solid #ddd;border-radius:8px;" title="搜索功能演示">
-                <source src="static/videos/04搜索功能演示.mp4" type="video/mp4">
                 <source src="static/videos/04搜索功能演示.mov" type="video/quicktime">
-                您的浏览器不支持视频播放。
+                您的浏览器不支持视频播放。请使用现代浏览器或将视频转码为 mp4。
               </video>
               <p class="has-text-centered is-size-6 mt-2">搜索功能演示</p>
             </div>
