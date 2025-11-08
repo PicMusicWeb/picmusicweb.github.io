@@ -43,21 +43,38 @@
   </head>
   <body>
     <main>
-      <!-- 顶部：左侧 Logo，右侧标题/作者/按钮/简介（右侧内容居中） -->
-      <section class="section pt-6 pb-4">
-        <div class="container has-text-centered">
-          <div class="columns is-centered is-vcentered is-variable is-6">
-            <div class="column is-narrow">
-              <img src="static/images/logo.png" alt="PicMusic 项目 Logo" style="max-width:180px;">
+      <!-- 顶部：Logo、项目名、GitHub 链接、作者并排显示 -->
+      <section class="section pt-6 pb-3">
+        <div class="container">
+          <nav class="level is-mobile" style="flex-wrap: wrap; row-gap: .75rem;">
+            <div class="level-left" style="gap: 1rem; flex-wrap: wrap; align-items: center;">
+              <div class="level-item">
+                <img src="static/images/logo.png" alt="PicMusic 项目 Logo" style="height:56px;width:auto;">
+              </div>
+              <div class="level-item">
+                <span class="title is-3" style="line-height:56px;">PicMusic</span>
+              </div>
+              <div class="level-item">
+                <a class="button is-dark is-rounded" href="https://github.com/bucolic-ruiqi/PicMusic_web" target="_blank" aria-label="GitHub 仓库链接">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>GitHub</span>
+                </a>
+              </div>
+              <div class="level-item">
+                <a class="is-size-5" href="https://github.com/bucolic-ruiqi" target="_blank">Ruiqi Yang</a>
+              </div>
             </div>
-            <div class="column" style="max-width:680px;">
-              <h1 class="title is-2 mb-5">PicMusic</h1>
-              <p class="subtitle is-4 mb-5"><a href="https://github.com/bucolic-ruiqi" target="_blank">Ruiqi Yang</a></p>
-              <a class="button is-dark is-rounded mb-5" href="https://github.com/bucolic-ruiqi/PicMusic_web" target="_blank" aria-label="GitHub 仓库链接">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>GitHub</span>
-              </a>
-              <div class="content is-medium has-text-left" style="margin:0 auto;">
+          </nav>
+        </div>
+      </section>
+
+      <!-- 项目简介：与“页面展示”一致的居中外壳，段落文本左对齐 -->
+      <section class="section pt-3 pb-4">
+        <div class="container">
+          <h2 class="title is-4 has-text-centered mb-5">项目简介</h2>
+          <div class="columns is-centered">
+            <div class="column is-10-desktop is-10-tablet is-12-mobile">
+              <div class="content is-medium has-text-left">
                 <p><strong>项目简介：</strong>PicMusic——以一张旅途照片，获得个性化的音乐推荐</p>
                 <p>本项目依托于2025-2026学年秋冬学期浙江大学生仪学院《高级程序设计》大作业，旨在实现以一张旅途照片，开启个性化音乐推荐的大门，打破听觉与视觉的屏障，促进旅途多模态管理。</p>
                 <p>PicMusic 将“图像情绪理解 + 歌曲情绪检索”融入旅行日记：你上传照片，后端用 CLIP 推断情绪分布，匹配曲库里最合适的歌；前端提供沉浸式的时间线、编辑器与全局迷你播放器，帮助你沉淀一段段“有声的回忆”。</p>
